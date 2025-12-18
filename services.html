@@ -8,13 +8,13 @@
     <meta name="keywords" content="עורך דין ליטיגציה אזרחית ומסחרית, משרד עורכי דין, עורך דין ליטיגציה מקרקעין, עורך דין לשון הרע והוצאת דיבה">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <!-- Zappy Analytics -->
 <script>
 (function() {
@@ -217,7 +217,67 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
 </head>
 <body>
 <!-- Zappy Attribution Header --><html><head></head><body><div id="zappy-attribution-header" class="zappy-header" style="display: none;">
@@ -227,7 +287,7 @@
     <div class="container nav-container">
       <div class="nav-brand">
         <a href="/" class="logo-link">
-          <img src="assets/logo.webp" alt="עו" ד="" חגי="" אפרתי"="" class="logo">
+          <img src="/assets/logo.webp" alt="עו" ד="" חגי="" אפרתי"="" class="logo">
         </a>
       </div>
       
@@ -273,7 +333,7 @@
           <p>הגישה המקצועית שלנו משלבת הבנה עמוקה של הדין האזרחי והמסחרי, ניתוח מדוקדק של העובדות והראיות, ופיתוח אסטרטגיה משפטית מותאמת אישית לכל תיק. אנו שמים דגש על תקשורת שוטפת עם הלקוחות, שקיפות מלאה בכל שלבי ההליך ומחויבות להשגת התוצאות הטובות ביותר.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-4" data-context="Israeli attorney presenting civil and commercial litigation case in modern courtroom, legal documents and evidence displayed, professional legal proceedings" src="assets/service-service-4.webp" alt="עורך דין ליטיגציה אזרחית ומסחרית בהליך משפטי" class="service-img">
+          <img data-placeholder="service-4" data-context="Israeli attorney presenting civil and commercial litigation case in modern courtroom, legal documents and evidence displayed, professional legal proceedings" src="/assets/service-service-4.webp" alt="עורך דין ליטיגציה אזרחית ומסחרית בהליך משפטי" class="service-img">
         </div>
       </div>
 
@@ -285,7 +345,7 @@
           <p>הניסיון הרב שלנו בתחום מאפשר לנו להתמודד בהצלחה עם התיקים המורכבים ביותר, תוך שימוש בכלים המשפטיים המתקדמים ביותר ופיתוח אסטרטגיות יצירתיות להשגת התוצאות הרצויות. אנו עובדים בשיתוף פעולה הדוק עם מומחים בתחום הנדל"ן, מודדים, שמאים ומהנדסים, כדי לספק ללקוחותינו את השירות המקיף והמקצועי ביותר.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-5" data-context="Israeli attorney reviewing real estate litigation case with property documents, land registry papers and blueprints on desk, professional office environment" src="assets/service-service-5.webp" alt="עורך דין ליטיגציה מקרקעין בוחן תיק נדלן" class="service-img">
+          <img data-placeholder="service-5" data-context="Israeli attorney reviewing real estate litigation case with property documents, land registry papers and blueprints on desk, professional office environment" src="/assets/service-service-5.webp" alt="עורך דין ליטיגציה מקרקעין בוחן תיק נדלן" class="service-img">
         </div>
       </div>
 
@@ -297,7 +357,7 @@
           <p>אנו מבינים את הרגישות והדחיפות בתיקים מסוג זה, ופועלים במהירות וביעילות להגנה על המוניטין של לקוחותינו. הגישה שלנו משלבת ידע משפטי מעמיק בדיני לשון הרע, הבנה של הסביבה המדיאטית המודרנית ויכולת לפעול במהירות במצבי חירום. אנו שמים דגש על שמירה על פרטיות הלקוחות ומחויבים להשגת התוצאות הטובות ביותר תוך הקטנת הנזק למוניטין.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-6" data-context="Israeli attorney consulting on defamation case with client, documents about online reputation damage and social media posts, professional consultation" src="assets/service-service-6.webp" alt="עורך דין לשון הרע והוצאת דיבה בייעוץ משפטי" class="service-img">
+          <img data-placeholder="service-6" data-context="Israeli attorney consulting on defamation case with client, documents about online reputation damage and social media posts, professional consultation" src="/assets/service-service-6.webp" alt="עורך דין לשון הרע והוצאת דיבה בייעוץ משפטי" class="service-img">
         </div>
       </div>
 
@@ -308,7 +368,7 @@
           <p>אנו מתמחים בניתוח פסקי דין, זיהוי טעויות משפטיות ועובדתיות, הכנת כתבי ערעור מקצועיים וייצוג בדיונים בערכאות הערעור. הניסיון שלנו מאפשר לנו להתמודד בהצלחה עם המקרים המורכבים ביותר ולהשיג תוצאות חיוביות עבור לקוחותינו. אנו פועלים תוך הבנה מעמיקה של הפסיקה והדין, ומפתחים אסטרטגיות ערעור יעילות המתאימות לכל מקרה ומקרה.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-7" data-context="Israeli attorney preparing appeal case documents in law office, legal briefs and court decisions on desk, professional legal research environment" src="assets/service-service-7.webp" alt="עורך דין מכין ערעור משפטי" class="service-img">
+          <img data-placeholder="service-7" data-context="Israeli attorney preparing appeal case documents in law office, legal briefs and court decisions on desk, professional legal research environment" src="/assets/service-service-7.webp" alt="עורך דין מכין ערעור משפטי" class="service-img">
         </div>
       </div>
 
@@ -319,7 +379,7 @@
           <p>אנו מאמינים שייעוץ משפטי איכותי בשלבים המוקדמים יכול למנוע סכסוכים יקרים ומורכבים בעתיד. הגישה שלנו משלבת ידע משפטי מעמיק עם הבנה עסקית ומעשית, כדי לספק ללקוחותינו ייעוץ מקיף ומועיל. אנו זמינים ללקוחותינו לייעוץ שוטף ומלווים אותם בקבלת החלטות משפטיות חשובות.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-8" data-context="Israeli attorney providing preventive legal consultation to business clients, reviewing contracts and documents, professional advisory meeting" src="assets/service-service-8.webp" alt="עורך דין מספק ייעוץ משפטי מונע" class="service-img">
+          <img data-placeholder="service-8" data-context="Israeli attorney providing preventive legal consultation to business clients, reviewing contracts and documents, professional advisory meeting" src="/assets/service-service-8.webp" alt="עורך דין מספק ייעוץ משפטי מונע" class="service-img">
         </div>
       </div>
 
@@ -330,7 +390,7 @@
           <p>הגישה שלנו משלבת מיומנויות משא ומתן מתקדמות עם הבנה עמוקה של הדין והפסיקה, כדי להשיג את התוצאות הטובות ביותר עבור לקוחותינו תוך חיסכון בזמן ובעלויות. אנו מאמינים שבמקרים רבים, פתרון חוץ משפטי יכול להיות יעיל יותר מהליך משפטי ממושך, ואנו פועלים למצוא את הפתרון המיטבי לכל מקרה.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-9" data-context="Israeli attorney facilitating mediation session between parties, professional negotiation and alternative dispute resolution setting" src="assets/service-service-9.webp" alt="עורך דין מנחה הליך גישור" class="service-img">
+          <img data-placeholder="service-9" data-context="Israeli attorney facilitating mediation session between parties, professional negotiation and alternative dispute resolution setting" src="/assets/service-service-9.webp" alt="עורך דין מנחה הליך גישור" class="service-img">
         </div>
       </div>
 
@@ -341,7 +401,7 @@
           <p>שירותינו בתחום הליטיגציה המנהלית כוללים ייצוג בסכסוכים עם רשויות מקומיות, משרדי ממשלה, רשויות מס וגופים ציבוריים אחרים. אנו מלווים את הלקוחות בכל שלבי ההליך המנהלי, מהגשת התנגדויות ובקשות, דרך ניהול המשא ומתן עם הרשויות, ועד לייצוג בערכאות המשפטיות. הידע והניסיון שלנו בתחום הדין המנהלי מאפשרים לנו להתמודד בהצלחה עם המקרים המורכבים ביותר.</p>
         </div>
         <div class="service-detail-image">
-          <img data-placeholder="service-10" data-context="Israeli attorney representing client in administrative litigation case against government authority, official documents and legal files, professional legal proceedings" src="assets/service-service-10.webp" alt="עורך דין בליטיגציה מנהלית" class="service-img">
+          <img data-placeholder="service-10" data-context="Israeli attorney representing client in administrative litigation case against government authority, official documents and legal files, professional legal proceedings" src="/assets/service-service-10.webp" alt="עורך דין בליטיגציה מנהלית" class="service-img">
         </div>
       </div>
     </div>
@@ -416,7 +476,34 @@
       if (data.showAttribution) {
         var header = document.getElementById('zappy-attribution-header');
         if (header) {
-          header.style.display = 'block';
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
         }
       }
     })
@@ -426,8 +513,43 @@
 })();
 </script>
     <div data-integration="accessibility:toolbar"></div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
 </body></html>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
