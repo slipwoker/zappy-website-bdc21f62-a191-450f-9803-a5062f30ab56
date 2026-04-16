@@ -1,0 +1,46 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### About
+https://hagayefrati.co.il/about
+
+### Case-studies
+https://hagayefrati.co.il/case-studies
+
+### Contact
+https://hagayefrati.co.il/contact
+
+### Home
+https://hagayefrati.co.il
+
+### Services
+https://hagayefrati.co.il/services
+
+## Legal & Policy
+
+### Privacy Policy
+https://hagayefrati.co.il/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://hagayefrati.co.il/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://hagayefrati.co.il/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://hagayefrati.co.il/sitemap.xml
+- **Robots.txt**: https://hagayefrati.co.il/robots.txt
